@@ -14,14 +14,12 @@
 	UITableView *theList;
 	skaterAppDelegate *appDelegate;
 	TrickViewController *trickViewController;
-	BOOL fromHomeScreen;
 	int sortMode; // 0 = difficulty, 1 = type
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *theList;
 @property (nonatomic, retain) skaterAppDelegate *appDelegate;
 @property (nonatomic, retain) TrickViewController *trickViewController;
-@property (nonatomic, readwrite) BOOL fromHomeScreen;
 @property (nonatomic, readwrite) int sortMode;
 
 - (IBAction)chooseMode:(id)sender;

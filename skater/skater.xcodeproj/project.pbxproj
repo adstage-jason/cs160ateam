@@ -7,9 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< .mine
+		0B52FA12116715CD00C67863 /* smallcheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52FA10116715CD00C67863 /* smallcheck.png */; };
+		0B52FA13116715CD00C67863 /* smallx.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52FA11116715CD00C67863 /* smallx.png */; };
+		0B52FA62116719BD00C67863 /* TrickStatus.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B52FA61116719BD00C67863 /* TrickStatus.plist */; };
+		0B52FADA11671F6A00C67863 /* bigcheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B52FAD911671F6A00C67863 /* bigcheck.png */; };
+		0B903EDE1167075600EA2843 /* listicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B903EDD1167075600EA2843 /* listicon.png */; };
 		0BB67A691165BC5200A0C7CD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB67A681165BC5200A0C7CD /* SecondViewController.m */; };
 		0BB67C9F1166972100A0C7CD /* TrickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB67C9D1166972100A0C7CD /* TrickViewController.m */; };
 		0BB67CA01166972100A0C7CD /* TrickView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB67C9E1166972100A0C7CD /* TrickView.xib */; };
+=======
+		0BB67A691165BC5200A0C7CD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB67A681165BC5200A0C7CD /* SecondViewController.m */; };
+		0BB67C9F1166972100A0C7CD /* TrickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB67C9D1166972100A0C7CD /* TrickViewController.m */; };
+		0BB67CA01166972100A0C7CD /* TrickView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB67C9E1166972100A0C7CD /* TrickView.xib */; };
+>>>>>>> .r4
 		1D3623260D0F684500981E51 /* skaterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* skaterAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -21,11 +32,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< .mine
+		0B52FA10116715CD00C67863 /* smallcheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallcheck.png; sourceTree = "<group>"; };
+		0B52FA11116715CD00C67863 /* smallx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallx.png; sourceTree = "<group>"; };
+		0B52FA61116719BD00C67863 /* TrickStatus.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TrickStatus.plist; sourceTree = "<group>"; };
+		0B52FAD911671F6A00C67863 /* bigcheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigcheck.png; sourceTree = "<group>"; };
+		0B903EDD1167075600EA2843 /* listicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listicon.png; sourceTree = "<group>"; };
 		0BB67A671165BC5200A0C7CD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		0BB67A681165BC5200A0C7CD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		0BB67C9C1166972100A0C7CD /* TrickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrickViewController.h; sourceTree = "<group>"; };
 		0BB67C9D1166972100A0C7CD /* TrickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrickViewController.m; sourceTree = "<group>"; };
 		0BB67C9E1166972100A0C7CD /* TrickView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TrickView.xib; path = Classes/TrickView.xib; sourceTree = "<group>"; };
+=======
+		0BB67A671165BC5200A0C7CD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0BB67A681165BC5200A0C7CD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0BB67C9C1166972100A0C7CD /* TrickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrickViewController.h; sourceTree = "<group>"; };
+		0BB67C9D1166972100A0C7CD /* TrickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrickViewController.m; sourceTree = "<group>"; };
+		0BB67C9E1166972100A0C7CD /* TrickView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TrickView.xib; path = Classes/TrickView.xib; sourceTree = "<group>"; };
+>>>>>>> .r4
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* skaterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skaterAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* skaterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = skaterAppDelegate.m; sourceTree = "<group>"; };
@@ -102,10 +126,19 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< .mine
+				0B52FAD911671F6A00C67863 /* bigcheck.png */,
+				0B52FA10116715CD00C67863 /* smallcheck.png */,
+				0B52FA11116715CD00C67863 /* smallx.png */,
+				0B903EDD1167075600EA2843 /* listicon.png */,
 				0BB67C9E1166972100A0C7CD /* TrickView.xib */,
+=======
+				0BB67C9E1166972100A0C7CD /* TrickView.xib */,
+>>>>>>> .r4
 				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* skater-Info.plist */,
+				0B52FA61116719BD00C67863 /* TrickStatus.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -164,7 +197,16 @@
 			files = (
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
 				282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */,
+<<<<<<< .mine
 				0BB67CA01166972100A0C7CD /* TrickView.xib in Resources */,
+				0B903EDE1167075600EA2843 /* listicon.png in Resources */,
+				0B52FA12116715CD00C67863 /* smallcheck.png in Resources */,
+				0B52FA13116715CD00C67863 /* smallx.png in Resources */,
+				0B52FA62116719BD00C67863 /* TrickStatus.plist in Resources */,
+				0B52FADA11671F6A00C67863 /* bigcheck.png in Resources */,
+=======
+				0BB67CA01166972100A0C7CD /* TrickView.xib in Resources */,
+>>>>>>> .r4
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

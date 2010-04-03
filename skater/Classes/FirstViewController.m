@@ -11,6 +11,7 @@
 
 @implementation FirstViewController
 
+@synthesize appDelegate;
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -28,12 +29,11 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	appDelegate = (skaterAppDelegate *)[[UIApplication sharedApplication] delegate];
 }
-*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -55,6 +55,15 @@
 	// e.g. self.myOutlet = nil;
 }
 
+<<<<<<< .mine
+- (IBAction)watchVideo:(id)sender {
+	//SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+	appDelegate.listPrompt = 1;
+	[self.tabBarController setSelectedIndex:1];
+	//[self.navigationController pushViewController:secondViewController animated:YES];
+	//[secondViewController release];	
+}
+=======
 - (IBAction)watchVideo:(id)sender {
 	SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
 	secondViewController.fromHomeScreen = TRUE;
@@ -63,9 +72,19 @@
 	[secondViewController release];	
 	[self.tabBarController setSelectedIndex:1];
 }
+>>>>>>> .r4
+
+- (IBAction)shareVideo:(id)sender {
+	//SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+	appDelegate.listPrompt = 2;
+	[self.tabBarController setSelectedIndex:1];
+	//[self.navigationController pushViewController:secondViewController animated:YES];
+	//[secondViewController release];	
+}
 
 - (void)dealloc {
     [super dealloc];
+	[appDelegate release];
 }
 
 @end

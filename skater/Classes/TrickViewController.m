@@ -15,11 +15,15 @@
 @synthesize appDelegate;
 @synthesize description;
 @synthesize tips;
+@synthesize status;
+@synthesize check;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 	appDelegate = (skaterAppDelegate *)[[UIApplication sharedApplication] delegate];
+	self.check.image = [UIImage imageNamed:@"bigcheck.png"];
+	self.check.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -32,6 +36,15 @@
 	temp = [[NSString alloc] initWithFormat:@"%@\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", [info objectAtIndex:3]];
 	[tips setText:temp];
 	[temp release];
+	if ([appDelegate.trickStatus objectForKey:trickName] == nil && ![trickName isEqualToString:@"180"]) {
+		self.check.hidden = TRUE;
+	} else {
+		self.check.hidden = FALSE;
+	}
+	// Better way to do this?
+	if (appDelegate.listPrompt != 0) {
+		[self.navigationController popToRootViewControllerAnimated:YES];
+	}
 }
 
 - (void)didReceiveMemoryWarning {
@@ -53,6 +66,8 @@
 	[appDelegate release];
 	[description release];
 	[tips release];
+	[status release];
+	[check release];
 }
 
 

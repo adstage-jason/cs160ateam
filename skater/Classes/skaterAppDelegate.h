@@ -11,6 +11,7 @@
 @interface skaterAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;
     UITabBarController *tabBarController;
+<<<<<<< .mine
 	NSDictionary *trickInfo;
 	NSMutableDictionary *trickStatus;
 	NSMutableArray *freestyle;
@@ -24,10 +25,27 @@
 	NSMutableArray *threeStar;
 	NSMutableArray *fourStar;
 	NSMutableArray *fiveStar;
+	int listPrompt; // 0 = nothing, 1 = watch video, 2 = share video
+=======
+	NSDictionary *trickInfo;
+	NSMutableDictionary *trickStatus;
+	NSMutableArray *freestyle;
+	NSMutableArray *aerials;
+	NSMutableArray *flips;
+	NSMutableArray *grinds;
+	NSMutableArray *lip;
+	NSMutableArray *manuals;
+	NSMutableArray *oneStar;
+	NSMutableArray *twoStar;
+	NSMutableArray *threeStar;
+	NSMutableArray *fourStar;
+	NSMutableArray *fiveStar;
+>>>>>>> .r4
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+<<<<<<< .mine
 @property (nonatomic, retain) NSDictionary *trickInfo;
 @property (nonatomic, retain) NSMutableDictionary *trickStatus;
 @property (nonatomic, retain) NSArray *freestyle;
@@ -41,5 +59,21 @@
 @property (nonatomic, retain) NSArray *threeStar;
 @property (nonatomic, retain) NSArray *fourStar;
 @property (nonatomic, retain) NSArray *fiveStar;
+@property (nonatomic, readwrite) int listPrompt;
+=======
+@property (nonatomic, retain) NSDictionary *trickInfo;
+@property (nonatomic, retain) NSMutableDictionary *trickStatus;
+@property (nonatomic, retain) NSArray *freestyle;
+@property (nonatomic, retain) NSArray *aerials;
+@property (nonatomic, retain) NSArray *flips;
+@property (nonatomic, retain) NSArray *grinds;
+@property (nonatomic, retain) NSArray *lip;
+@property (nonatomic, retain) NSArray *manuals;
+@property (nonatomic, retain) NSArray *oneStar;
+@property (nonatomic, retain) NSArray *twoStar;
+@property (nonatomic, retain) NSArray *threeStar;
+@property (nonatomic, retain) NSArray *fourStar;
+@property (nonatomic, retain) NSArray *fiveStar;
+>>>>>>> .r4
 
 @end
