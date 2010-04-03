@@ -55,7 +55,6 @@
 	// e.g. self.myOutlet = nil;
 }
 
-<<<<<<< .mine
 - (IBAction)watchVideo:(id)sender {
 	//SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
 	appDelegate.listPrompt = 1;
@@ -63,16 +62,6 @@
 	//[self.navigationController pushViewController:secondViewController animated:YES];
 	//[secondViewController release];	
 }
-=======
-- (IBAction)watchVideo:(id)sender {
-	SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
-	secondViewController.fromHomeScreen = TRUE;
-	NSLog(@"%d", secondViewController.fromHomeScreen);
-	[self.navigationController pushViewController:secondViewController animated:YES];
-	[secondViewController release];	
-	[self.tabBarController setSelectedIndex:1];
-}
->>>>>>> .r4
 
 - (IBAction)shareVideo:(id)sender {
 	//SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
