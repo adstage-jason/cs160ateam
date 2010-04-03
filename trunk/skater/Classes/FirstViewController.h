@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SecondViewController.h"
 
 @interface FirstViewController : UIViewController {
 
 }
+
+- (IBAction)watchVideo:(id)sender;
 
 @end

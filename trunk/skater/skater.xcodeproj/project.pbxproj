@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BB67A691165BC5200A0C7CD /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB67A681165BC5200A0C7CD /* SecondViewController.m */; };
+		0BB67C9F1166972100A0C7CD /* TrickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB67C9D1166972100A0C7CD /* TrickViewController.m */; };
+		0BB67CA01166972100A0C7CD /* TrickView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BB67C9E1166972100A0C7CD /* TrickView.xib */; };
 		1D3623260D0F684500981E51 /* skaterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* skaterAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BB67A671165BC5200A0C7CD /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		0BB67A681165BC5200A0C7CD /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		0BB67C9C1166972100A0C7CD /* TrickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrickViewController.h; sourceTree = "<group>"; };
+		0BB67C9D1166972100A0C7CD /* TrickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrickViewController.m; sourceTree = "<group>"; };
+		0BB67C9E1166972100A0C7CD /* TrickView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TrickView.xib; path = Classes/TrickView.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* skaterAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skaterAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* skaterAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = skaterAppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +62,10 @@
 				28216C960DB411BC00E5133A /* FirstViewController.m */,
 				1D3623240D0F684500981E51 /* skaterAppDelegate.h */,
 				1D3623250D0F684500981E51 /* skaterAppDelegate.m */,
+				0BB67A671165BC5200A0C7CD /* SecondViewController.h */,
+				0BB67A681165BC5200A0C7CD /* SecondViewController.m */,
+				0BB67C9C1166972100A0C7CD /* TrickViewController.h */,
+				0BB67C9D1166972100A0C7CD /* TrickViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +102,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0BB67C9E1166972100A0C7CD /* TrickView.xib */,
 				282CCBFD0DB6C98000C4EA27 /* SecondView.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* skater-Info.plist */,
@@ -151,6 +164,7 @@
 			files = (
 				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
 				282CCBFE0DB6C98000C4EA27 /* SecondView.xib in Resources */,
+				0BB67CA01166972100A0C7CD /* TrickView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +178,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* skaterAppDelegate.m in Sources */,
 				28216C970DB411BC00E5133A /* FirstViewController.m in Sources */,
+				0BB67A691165BC5200A0C7CD /* SecondViewController.m in Sources */,
+				0BB67C9F1166972100A0C7CD /* TrickViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
