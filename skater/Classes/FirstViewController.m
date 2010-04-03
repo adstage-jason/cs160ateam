@@ -55,6 +55,14 @@
 	// e.g. self.myOutlet = nil;
 }
 
+- (IBAction)watchVideo:(id)sender {
+	SecondViewController *secondViewController = [[SecondViewController alloc] initWithNibName:@"SecondView" bundle:nil];
+	secondViewController.fromHomeScreen = TRUE;
+	NSLog(@"%d", secondViewController.fromHomeScreen);
+	[self.navigationController pushViewController:secondViewController animated:YES];
+	[secondViewController release];	
+	[self.tabBarController setSelectedIndex:1];
+}
 
 - (void)dealloc {
     [super dealloc];
