@@ -14,11 +14,15 @@
 	skaterAppDelegate *appDelegate;
 	UILabel *description;
 	UILabel *tips;
+	UILabel *status;
+	UIImageView *check;
 }
 
 @property (nonatomic, retain) NSString *trickName;
 @property (nonatomic, retain) skaterAppDelegate *appDelegate;
 @property (nonatomic, retain) IBOutlet UILabel *description;
 @property (nonatomic, retain) IBOutlet UILabel *tips;
+@property (nonatomic, retain) IBOutlet UILabel *status;
+@property (nonatomic, retain) IBOutlet UIImageView *check;
 
 @end

@@ -13,7 +13,6 @@
 @synthesize theList;
 @synthesize appDelegate;
 @synthesize trickViewController;
-@synthesize fromHomeScreen;
 @synthesize sortMode;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -28,10 +27,17 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-	NSLog(@"%d", fromHomeScreen);
-	if (fromHomeScreen) {
+	if (appDelegate.listPrompt == 0) {
+		self.navigationItem.prompt = nil;
+	} else if (appDelegate.listPrompt == 1) {
 		self.navigationItem.prompt = @"Select the trick you wish to watch.";
-		fromHomeScreen = FALSE;
+		NSLog(@"YES");
+		appDelegate.listPrompt = 0;
+		[theList setContentOffset:CGPointMake(0, 0) animated:NO];
+	} else if (appDelegate.listPrompt == 2) {
+		self.navigationItem.prompt = @"Select the trick you wish to share.";
+		appDelegate.listPrompt = 0;
+		[theList setContentOffset:CGPointMake(0, 0) animated:NO];
 	}
 	[theList deselectRowAtIndexPath:[theList indexPathForSelectedRow] animated:NO];
 }
@@ -144,7 +150,14 @@
 		[cell.textLabel setText:trick];
 		[cell.detailTextLabel setText:[info objectAtIndex:1]];
 	}
-	
+	// Set check or x based on completion status
+	UIImageView* backgroundView;
+	if ([appDelegate.trickStatus objectForKey:trick] == nil && ![trick isEqualToString:@"180"]) {
+		backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"smallx.png"]] autorelease];
+	} else {
+		backgroundView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"smallcheck.png"]] autorelease];
+	}
+	cell.backgroundView = backgroundView;
     return cell;
 }
 
